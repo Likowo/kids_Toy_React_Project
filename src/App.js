@@ -1,23 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import item from './models/item';
+import Item from './components/Item';
+
+//Establish state ( state controls data from models folder)
+
+const state = {
+  item
+}
 
 function App() {
-  return (
+  return ( // insert state in to each component
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      < Item itemInfor ={state.item[0]}/>
+      < Item itemInfor ={state.item[1]}/>
+      < Item itemInfor ={state.item[2]}/>
+         
     </div>
   );
 }
