@@ -35,6 +35,11 @@
   width: 100px; */
 }
 
+.image{
+  height: 10%;
+  width: 10%;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
